@@ -20,7 +20,7 @@ class TlfunctionrefConan(ConanFile):
 
     def validate(self):
         if self.settings.compiler.get_safe("cppstd"):
-            tools.check_min_cppstd(self, 11)
+            tools.check_min_cppstd(self, 14)
 
     def package_id(self):
         self.info.header_only()
